@@ -1,0 +1,6 @@
+services:
+
+    remg_media.file_subscriber:
+        class: Remg\MediaBundle\EventListener\FileSubscriber
+        tags:
+            - { name: doctrine.event_subscriber }
